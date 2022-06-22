@@ -1,0 +1,91 @@
+/* Write your CSS here */
+.app-container {
+  background-color: #dee0e3;
+  background-size: cover;
+  padding: 40px;
+}
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  flex-wrap: wrap;
+}
+.heading {
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: bold;
+  color: #1e293b;
+}
+.top-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  order: 1;
+}
+.image {
+  order: 2;
+  width: 35%;
+}
+@media screen and (max-width: 576px) {
+  .form-style {
+    order: 2;
+  }
+  .image {
+    order: 1;
+    max-width: 60vw;
+  }
+  .top-section {
+    flex-direction: column;
+  }
+}
+.form-heading {
+  font-family: 'Roboto';
+  font-size: 18px;
+
+  color: #475569;
+}
+.input {
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
+}
+.button {
+  color: #cbd2d9;
+  background-color: #0284c7;
+  border-radius: 8px;
+  padding: 8px;
+  align-self: flex-start;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 10px;
+}
+.line {
+  border-top: 0.2px solid #1e293b;
+  width: 100%;
+  margin-top: 16px;
+}
+.no-of-comments {
+  font-family: 'Roboto';
+  font-size: 16px;
+  color: #1e293b;
+}
+span {
+  color: white;
+  margin-right: 10px;
+  background-color: #0284c7;
+  padding: 5px;
+}
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0px;
+  flex-wrap: wrap;
+}
